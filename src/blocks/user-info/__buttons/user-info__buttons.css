@@ -1,0 +1,23 @@
+.user-info__buttons {
+    position: absolute;
+    width: 38px;
+    height: 18px;
+    left: 190px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    display: block;
+    cursor: pointer;
+    bottom: 0;
+    text-align: left;
+    font-size: 12px;
+}
+.user-info__buttons:focus {
+outline-color: greenyellow;
+}
+@media screen and (max-width: 980px) {
+    .user-info__buttons {
+      position: static;
+      margin-bottom: 15px;
+    }
+  }
