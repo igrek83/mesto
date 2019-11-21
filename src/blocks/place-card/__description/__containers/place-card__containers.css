@@ -1,0 +1,6 @@
+@import url(./__counter/place-card__counter.css);
+.place-card__containers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

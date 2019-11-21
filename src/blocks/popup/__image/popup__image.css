@@ -1,0 +1,14 @@
+@import url(./__lange-image/popup__lange-image.css);
+.popup__image {
+  min-width: 500px;
+  min-height: 430px;
+  background: none;
+  position: relative;
+  align-items: center;
+}
+
+@media screen and (max-width: 540px) {
+  .popup__content {
+    width: calc(100% - 60px);
+  }
+}

@@ -1,0 +1,17 @@
+@import url(./_display_none/popup__content_display_none.css);
+.popup__content {
+  width: 500px;
+  height: 430px;
+  background-color:white;
+  border-radius: 10px;
+  position: relative;
+  box-sizing: border-box;
+  padding: 34px 36px;
+  align-items: center;
+}
+
+@media screen and (max-width: 540px) {
+  .popup__content {
+    width: calc(100% - 60px);
+  }
+}
