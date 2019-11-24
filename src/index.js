@@ -1,18 +1,12 @@
 import {imageForm, aboutForm, avatarForm} from "./script/global.js";
 import {titleInput, imageInput, nameInput, aboutInput, avatarInput, userName, userAbout} from "./script/global.js";
 import "./style.css";
-import {Validate} from "./script/validate.js";
 import {CardList} from "./script/cardList.js";
 import {Api} from "./script/api.js";
 import {Popup} from "./script/popup.js";
 const serverUrl = NODE_ENV === 'development' ? 'http://praktikum.tk/cohort4/' : 'https://praktikum.tk/cohort4/';
 const api = new Api(serverUrl, "d237845d-1acc-4f45-87df-e31543b7d977");
 const cardListImage = new CardList(document.querySelector(".places-list"), "");                                                     //аргументы: элемент DOM, в котором лежат карточки и массив с карточками
-const titleValidate = new Validate(titleInput);                                                    
-const imageValidate = new Validate(imageInput);
-const nameValidate = new Validate(nameInput);
-const aboutValidate = new Validate(aboutInput);
-const avatarValidate = new Validate(avatarInput);
 const imageContent = new Popup(document.querySelector(`#langeImage`));                                                                //попуп с большой картинкой
 //меняю аватар
 const avatarEdit = event => {
